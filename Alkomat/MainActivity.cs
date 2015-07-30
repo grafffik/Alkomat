@@ -5,6 +5,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Alkomat.Entities;
 
 namespace Alkomat
 {
@@ -20,6 +21,7 @@ namespace Alkomat
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+            Person johny = new Person("Jarosław", "Male", 160, 210, 38);
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
