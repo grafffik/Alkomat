@@ -12,6 +12,10 @@ namespace Alkomat
     public class MainActivity : Activity
     {
         int count = 1;
+        private int waga;
+        private int wiek;
+        private int wzrost;
+
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -27,7 +31,6 @@ namespace Alkomat
            // button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
             //dlevel
 
-            //super komentarz
         }
     }
 }
