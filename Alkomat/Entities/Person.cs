@@ -12,6 +12,7 @@ using Android.Widget;
 
 namespace Alkomat.Entities
 {
+    //PERSON STATISTICS
     public class Person
     {
         public string Name { get; set; }
@@ -20,9 +21,8 @@ namespace Alkomat.Entities
         public int Old { get; set; } //years 
         public string Sex { get; set; }//"Female"
 
-        //public Dranked _Dranked { get; set; }
-        //public Reduction _Reduction { get; set; }
-        //public Alkolator _Calculator { get; set; }
+        public Dranked _Dranked { get; set; }
+        public Reduction _Reduction { get; set; }
 
         public Person(string name, string sex, int weight, int height, int old)
         {
@@ -41,6 +41,39 @@ namespace Alkomat.Entities
             if (Sex == "Male")
                 values.Add(Old);
             return values;
+        }
+    }
+
+    //PERSON MECHANICS
+    public class Dranked
+    {
+        public double Value { get; set; } //grams
+
+        public void Drink(Alcohol item)
+        {
+            Value += (item.ml * (item.percent * 0.01) * 0.789);
+        }
+        public Dranked()
+        {
+            this.Value = 0.0;
+        }
+    }
+    public class Reduction
+    {
+        private List<int> Statistics;
+        public double Value { get; set; }
+
+        public Reduction(List<int> PersonStats)//0-weight, 1-height, 2-old
+        {
+            this.Statistics = PersonStats;
+            if (this.Statistics.Count == 2)
+            {//calc for female
+                this.Value = -2.097 + (0.2466 * Statistics[0]) + (0.1069 * Statistics[1]);
+            }
+            else
+            {//calc for male
+                this.Value = 2.447 - (0.09156 * Statistics[2]) + (0.1074 * Statistics[1]) + (0.3362 * Statistics[0]);
+            }
         }
     }
 }
