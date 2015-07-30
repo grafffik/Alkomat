@@ -31,7 +31,10 @@ namespace Alkomat.Mechanics
             //( korzysta z redukcji osoby i akutalnego poziomu alkoholu w gramach ._Dranked.Value-ilosc alko w gramach
             var aktualnyPromil = jerry.GetPromile();
             jerry.PoMinutach(60);
+            jerry.Drink(beer);
             var poGodziniePromil = jerry.GetPromile();
+            jerry.PoMinutach(300);
+            var Po5godzinach = jerry.GetPromile();
             //przeliczenie alko po 60 minutach, Ratio to spalanie alko/minute np. 60 * 0.20
            // jerry.StartPromile.Process(60, jerry.Ratio);
            // var poGodziniePromil = jerry.StartPromile.Value;

@@ -47,6 +47,8 @@ namespace Alkomat.Entities
             this.Promile = new Promile();
             this.HighestPromile = new Promile();
             this.AllowedPromile = new Promile();
+
+            this.Promile = ;
         }
 
         public List<int> GetPersonStats()
@@ -62,11 +64,12 @@ namespace Alkomat.Entities
         public void Drink(Alcohol beer)
         {
             _Dranked.Add(beer);
+            this.Promile.Value = (this._Dranked.Value / this._Reduction.Value) * 0.8;
         }
 
         public double GetPromile()
         {
-            return (this._Dranked.Value / this._Reduction.Value) * 0.8;
+            return this.Promile.Value;
         }
 
         public void PoMinutach(int minutes)
