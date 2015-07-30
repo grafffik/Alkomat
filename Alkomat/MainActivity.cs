@@ -28,6 +28,7 @@ namespace Alkomat
             //dlevel
             //yooyoyoy
             //super komentarz
+            ////dupa wolowa
         }
     }
 }
