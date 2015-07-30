@@ -25,7 +25,9 @@ namespace Alkomat.Entities
         public Dranked _Dranked { get; set; }
         public Reduction _Reduction { get; set; }
 
-        public Promile StartPromile { get; set; }
+        public int Minuty { get; set; }
+
+        public Promile Promile { get; set; }
         public Promile HighestPromile { get; set; }
         public Promile AllowedPromile { get; set; }
 
@@ -38,9 +40,11 @@ namespace Alkomat.Entities
             this.Old = old;
             this.Ratio = ratio;
 
+            this.Minuty = 0;
+
             this._Dranked = new Dranked();
             this._Reduction = new Reduction(this.GetPersonStats());
-            this.StartPromile = new Promile();
+            this.Promile = new Promile();
             this.HighestPromile = new Promile();
             this.AllowedPromile = new Promile();
         }
@@ -54,6 +58,22 @@ namespace Alkomat.Entities
                 values.Add(Old);
             return values;
         }
+
+        public void Drink(Alcohol beer)
+        {
+            _Dranked.Add(beer);
+        }
+
+        public double GetPromile()
+        {
+            return (this._Dranked.Value / this._Reduction.Value) * 0.8;
+        }
+
+        public void PoMinutach(int minutes)
+        {
+            this.Promile.Value = this.Promile.Value - (minutes * Ratio);
+            ++Minuty;
+        }
     }
 
     //PERSON MECHANICS
@@ -61,7 +81,7 @@ namespace Alkomat.Entities
     {
         public double Value { get; set; } //grams
 
-        public void Drink(Alcohol item)
+        public void Add(Alcohol item)
         {
             Value += (item.ml * (item.percent * 0.01) * 0.789);
         }
