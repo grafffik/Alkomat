@@ -12,6 +12,11 @@ namespace Alkomat
     public class MainActivity : Activity
     {
         int count = 1;
+        public int wiek; //zmienna dla wieku
+        public int waga; //zmienna dla wagi
+        public int wzrost; //zmienna dla wzrostu
+       
+   
 
         protected override void OnCreate(Bundle bundle)
         {
