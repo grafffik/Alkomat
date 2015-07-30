@@ -20,14 +20,23 @@ namespace Alkomat.Mechanics
             Alcohol beer = new Alcohol(500, 5.5);
             Alcohol vodka = new Alcohol(100, 40.0);
 
-            Person jerry = new Person("Jaros³aw", "Male", 160, 210, 38);
+            //tworzy nowa osobe, funkcja tworzaca odrazu wylicza Redukcje Alkoholu u osoby
+            Person jerry = new Person("Jaros³aw", "Male", Globals._averageRatio, 160, 210, 38);
+            //jerry pije piwko, wodke i znowu piwko
             jerry._Dranked.Drink(beer);
             jerry._Dranked.Drink(vodka);
             jerry._Dranked.Drink(beer);
 
+            //Set wylicza zawartosc alkoholu we krwi dla danej osoby w promilach
+            //( korzysta z redukcji osoby i akutalnego poziomu alkoholu w gramach ._Dranked.Value-ilosc alko w gramach
             jerry.StartPromile.Set(jerry);
+            var aktualnyPromil = jerry.StartPromile.Value;
 
+            //przeliczenie alko po 60 minutach, Ratio to spalanie alko/minute np. 60 * 0.20
+            jerry.StartPromile.Process(60, jerry.Ratio);
+            var poGodziniePromil = jerry.StartPromile.Value;
 
+            var dupa = "cos_tam";
             //Globals._allowedAmount;
 
         }

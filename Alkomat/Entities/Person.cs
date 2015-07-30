@@ -20,6 +20,7 @@ namespace Alkomat.Entities
         public int Height { get; set; } //cm
         public int Old { get; set; } //years 
         public string Sex { get; set; }//"Female"
+        public double Ratio { get; set; }//spalanie alko na minute
 
         public Dranked _Dranked { get; set; }
         public Reduction _Reduction { get; set; }
@@ -28,13 +29,14 @@ namespace Alkomat.Entities
         public Promile HighestPromile { get; set; }
         public Promile AllowedPromile { get; set; }
 
-        public Person(string name, string sex, int weight, int height, int old = -1)
+        public Person(string name, string sex, double ratio, int weight, int height, int old = -1)
         {
             this.Name = name;
             this.Sex = sex;
             this.Weight = weight;
             this.Height = height;
             this.Old = old;
+            this.Ratio = ratio;
 
             this._Dranked = new Dranked();
             this._Reduction = new Reduction(this.GetPersonStats());
