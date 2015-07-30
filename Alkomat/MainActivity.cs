@@ -15,6 +15,7 @@ namespace Alkomat
         public int wiek; //zmienna dla wieku
         public int waga; //zmienna dla wagi
         public int wzrost; //zmienna dla wzrostu
+        public int plec; // plec
        
    
 
