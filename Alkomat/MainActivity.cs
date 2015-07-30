@@ -25,6 +25,9 @@ namespace Alkomat
            // Button button = FindViewById<Button>(Resource.Id.MyButton);
 
            // button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+
+
+            //super komentarz
         }
     }
 }
