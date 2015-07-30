@@ -13,10 +13,10 @@ namespace Alkomat
     [Activity(Label = "Alkomat", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        int count = 1;
-        private int waga;
-        private int wiek;
-        private int wzrost;
+        //int count = 1;
+        //private int waga;
+        //private int wiek;
+        //private int wzrost;
 
 
         protected override void OnCreate(Bundle bundle)

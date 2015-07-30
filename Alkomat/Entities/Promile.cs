@@ -17,14 +17,15 @@ namespace Alkomat.Entities
         public double Value {get; set;}
         public int MinutesPassed { get; set; }
 
-        public void Set(Dranked _Dranked, Reduction _Reduction)
+        public void Set(Person person)
         {
-            this.Value = (_Dranked.Value / _Reduction.Value) * 0.8;
+            this.Value = (person._Dranked.Value / person._Reduction.Value) * 0.8;
             this.MinutesPassed = 0;
         }
         public void Process(int minutes, double ratio)
         {
             this.Value = Value - (minutes * ratio);
+            ++MinutesPassed;
         }
         public Promile(Promile promile)
         {

@@ -21,6 +21,14 @@ namespace Alkomat.Mechanics
             Alcohol vodka = new Alcohol(100, 40.0);
 
             Person jerry = new Person("Jaros³aw", "Male", 160, 210, 38);
+            jerry._Dranked.Drink(beer);
+            jerry._Dranked.Drink(vodka);
+            jerry._Dranked.Drink(beer);
+
+            jerry.StartPromile.Set(jerry);
+
+
+            //Globals._allowedAmount;
 
         }
     }

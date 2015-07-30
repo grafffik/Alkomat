@@ -54,6 +54,7 @@
     <Compile Include="Entities\Promile.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Mechanics\Alcolator.cs" />
+    <Compile Include="Mechanics\Globals.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

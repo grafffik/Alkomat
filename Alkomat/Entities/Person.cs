@@ -24,13 +24,23 @@ namespace Alkomat.Entities
         public Dranked _Dranked { get; set; }
         public Reduction _Reduction { get; set; }
 
-        public Person(string name, string sex, int weight, int height, int old)
+        public Promile StartPromile { get; set; }
+        public Promile HighestPromile { get; set; }
+        public Promile AllowedPromile { get; set; }
+
+        public Person(string name, string sex, int weight, int height, int old = -1)
         {
             this.Name = name;
             this.Sex = sex;
             this.Weight = weight;
             this.Height = height;
             this.Old = old;
+
+            this._Dranked = new Dranked();
+            this._Reduction = new Reduction(this.GetPersonStats());
+            this.StartPromile = new Promile();
+            this.HighestPromile = new Promile();
+            this.AllowedPromile = new Promile();
         }
 
         public List<int> GetPersonStats()
