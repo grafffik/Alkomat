@@ -26,7 +26,7 @@ namespace Alkomat
 
            // button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
             //dlevel
-
+            //yooyoyoy
             //super komentarz
         }
     }
