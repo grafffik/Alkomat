@@ -48,7 +48,7 @@ namespace Alkomat.Entities
             this.HighestPromile = new Promile();
             this.AllowedPromile = new Promile();
 
-            this.Promile = ;
+            //this.Promile = ;
         }
 
         public List<int> GetPersonStats()
