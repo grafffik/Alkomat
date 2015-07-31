@@ -25,6 +25,8 @@ namespace Alkomat
             Button buttonObliczPromileDalej = FindViewById<Button>(Resource.Id.buttonObliczPromileDalej);
             buttonObliczPromileDalej.Click += ButtonObliczPromileDalej_Click;
 
+            var ddd = Zmienne.tbw;
+
             
         }
 

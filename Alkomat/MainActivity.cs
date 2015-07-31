@@ -13,15 +13,6 @@ namespace Alkomat
     [Activity(Label = "Alkomat", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        
-        public static class Zmienne
-        {
-            public static double wzrost { get; set; }
-            public static double waga { get; set; }
-            public static double wiek { get; set; }
-            public static double tbw { get; set; }
-        }
-
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
