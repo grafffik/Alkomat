@@ -14,7 +14,6 @@ namespace Alkomat
     public class MainActivity : Activity
     {
        
-
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -22,7 +21,19 @@ namespace Alkomat
             Alcolator.ExampleTest();
             SetContentView(Resource.Layout.Main);
 
-        
+            //przycisk Dalej
+            Button buttonDalej = FindViewById<Button>(Resource.Id.buttonDalej);
+
+            buttonDalej.Click += ButtonDalej_Click;
+
+
+
+        }
+
+        private void ButtonDalej_Click(object sender, EventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(ObliczPromile));
+            this.StartActivity(intent);
         }
     }
 }

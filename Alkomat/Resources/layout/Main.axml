@@ -122,6 +122,6 @@
         android:shadowDy="0"
         android:shadowRadius="5"
         android:gravity="center"
-        android:id="@+id/button1"
+        android:id="@+id/buttonDalej"
         android:layout_gravity="center" />
 </LinearLayout>

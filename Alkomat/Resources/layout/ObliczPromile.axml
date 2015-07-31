@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:layout_weight="1">
+        <TableLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:stretchColumns="1"
+            android:padding="10dip"
+            android:isScrollContainer="true">
+            <TextView
+                android:text="Oblicz ile wypiłeś"
+                android:gravity="center"
+                android:paddingTop="50px"
+                android:paddingBottom="50px"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView1" />
+        <!-- Wiersz 1-->
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <!-- Kolumna 1 -->
+                <TextView
+                    android:id="@+id/duzepiwo"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Duże piwo (5,0%) 500ml"
+                    android:padding="10dip"
+                    android:textStyle="bold" />
+            <!-- Kolumna 2 -->
+                <Button
+                    android:id="@+id/przyciskMinus"
+                    android:text="-"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/przyciskMinus"
+                    android:layout_margin="4dip"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            <!-- Kolumna 3 -->
+                <TextView
+                    android:id="@+id/iloscDuzePiwo"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:inputType="number"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+            <!-- Kolumna 4 -->
+                <Button
+                    android:id="@+id/przyciskPlus"
+                    android:text="+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/przyciskPlus"
+                    android:layout_margin="4dip"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            </TableRow>
+        <!-- Wiersz 2-->
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <!-- Kolumna 1 -->
+                <TextView
+                    android:id="@+id/malepiwo"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Małe piwo (5,0%) 330ml"
+                    android:padding="10dip"
+                    android:textStyle="bold" />
+            <!-- Kolumna 2 -->
+                <Button
+                    android:id="@id/przyciskMinus"
+                    android:text="-"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/przyciskMinus"
+                    android:layout_margin="4dip"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            <!-- Kolumna 3 -->
+                <TextView
+                    android:id="@+id/iloscMalePiwo"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:inputType="number"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+            <!-- Kolumna 4 -->
+                <Button
+                    android:id="@id/przyciskPlus"
+                    android:text="+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/przyciskPlus"
+                    android:layout_margin="4dip"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            </TableRow>
+        <!-- Wiersz 3-->
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <!-- Kolumna 1 -->
+                <TextView
+                    android:id="@+id/lekkiepiwo"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Lekkie piwo (2,6%) 500ml"
+                    android:padding="10dip"
+                    android:textStyle="bold" />
+            <!-- Kolumna 2 -->
+                <Button
+                    android:id="@id/przyciskMinus"
+                    android:text="-"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/przyciskMinus"
+                    android:layout_margin="4dip"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            <!-- Kolumna 3 -->
+                <TextView
+                    android:id="@+id/iloscLekkiePiwo"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:inputType="number"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+            <!-- Kolumna 4 -->
+                <Button
+                    android:id="@id/przyciskPlus"
+                    android:text="+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/przyciskPlus"
+                    android:layout_margin="4dip"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            </TableRow>
+        <!-- Wiersz 4-->
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <!-- Kolumna 1 -->
+                <TextView
+                    android:id="@+id/wino"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Wino (16,0%) 100ml"
+                    android:padding="10dip"
+                    android:textStyle="bold" />
+            <!-- Kolumna 2 -->
+                <Button
+                    android:id="@id/przyciskMinus"
+                    android:text="-"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/przyciskMinus"
+                    android:layout_margin="4dip"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            <!-- Kolumna 3 -->
+                <TextView
+                    android:id="@+id/iloscWina"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:inputType="number"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+            <!-- Kolumna 4 -->
+                <Button
+                    android:id="@id/przyciskPlus"
+                    android:text="+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/przyciskPlus"
+                    android:layout_margin="4dip"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            </TableRow>
+        <!-- Wiersz 5-->
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <!-- Kolumna 1 -->
+                <TextView
+                    android:id="@+id/szampan"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Szampan (8,0%) 100ml"
+                    android:padding="10dip"
+                    android:textStyle="bold" />
+            <!-- Kolumna 2 -->
+                <Button
+                    android:id="@id/przyciskMinus"
+                    android:text="-"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/przyciskMinus"
+                    android:layout_margin="4dip"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            <!-- Kolumna 3 -->
+                <TextView
+                    android:id="@+id/iloscSzampana"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:inputType="number"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+            <!-- Kolumna 4 -->
+                <Button
+                    android:id="@id/przyciskPlus"
+                    android:text="+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/przyciskPlus"
+                    android:layout_margin="4dip"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            </TableRow>
+        <!-- Wiersz 6-->
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <!-- Kolumna 1 -->
+                <TextView
+                    android:id="@+id/wodkaMala"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Wódka (40,0%) 30ml"
+                    android:padding="10dip"
+                    android:textStyle="bold" />
+            <!-- Kolumna 2 -->
+                <Button
+                    android:id="@id/przyciskMinus"
+                    android:text="-"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/przyciskMinus"
+                    android:layout_margin="4dip"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            <!-- Kolumna 3 -->
+                <TextView
+                    android:id="@+id/iloscWodkaMala"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:inputType="number"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+            <!-- Kolumna 4 -->
+                <Button
+                    android:id="@id/przyciskPlus"
+                    android:text="+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/przyciskPlus"
+                    android:layout_margin="4dip"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            </TableRow>
+        <!-- Wiersz 7-->
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <!-- Kolumna 1 -->
+                <TextView
+                    android:id="@+id/wodkaDuza"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Wódka (40,0%) 50ml"
+                    android:padding="10dip"
+                    android:textStyle="bold" />
+            <!-- Kolumna 2 -->
+                <Button
+                    android:id="@id/przyciskMinus"
+                    android:text="-"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/przyciskMinus"
+                    android:layout_margin="4dip"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            <!-- Kolumna 3 -->
+                <TextView
+                    android:id="@+id/iloscWodkaDuza"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_margin="4dip"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:inputType="number"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+            <!-- Kolumna 4 -->
+                <Button
+                    android:id="@id/przyciskPlus"
+                    android:text="+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/przyciskPlus"
+                    android:layout_margin="4dip"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+            </TableRow>
+        <!-- Przycisk Dalej do kolejnej aktywnosci-->
+            <Button
+                android:text="Dalej"
+                android:textColor="#FFFFFF"
+                android:layout_width="200dp"
+                android:layout_height="44dp"
+                android:background="@drawable/przycisk"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:gravity="center"
+                android:id="@+id/buttonObliczPromileDalej"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp" />
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

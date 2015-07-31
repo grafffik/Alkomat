@@ -38,8 +38,7 @@ namespace Alkomat.Mechanics
             //przeliczenie alko po 60 minutach, Ratio to spalanie alko/minute np. 60 * 0.20
            // jerry.StartPromile.Process(60, jerry.Ratio);
            // var poGodziniePromil = jerry.StartPromile.Value;
-
-            var dupa = "cos_tam";
+           
             //Globals._allowedAmount;
 
         }
