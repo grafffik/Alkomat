@@ -12,27 +12,37 @@
         
    -->
     <TextView
-        android:text="Aby wynik byłl jak najdokładniejszy musisz podać kilka swoich danych"
+        android:text="Aby wynik był jak najdokładniejszy musisz podać kilka swoich danych."
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:gravity="center"
         android:id="@+id/textView4"
-        android:paddingBottom="50px" />
+        android:paddingTop="50px"
+        android:paddingBottom="50px"
+        android:textSize="20"
+        android:paddingLeft="10px"
+        android:paddingRight="10px" />
     <TextView
         android:text="Twoja płeć"
-        android:layout_marginTop="50px"
         android:paddingBottom="30px"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
         android:id="@+id/textView1" />
+<!-- wybór kobieta, mężczyzna -->
     <RadioGroup
         android:minWidth="25px"
         android:minHeight="25px"
-        android:layout_marginBottom="50px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:paddingBottom="50px"
         android:id="@+id/radioGroup1">
         <RadioButton
             android:layout_width="wrap_content"
@@ -46,75 +56,83 @@
             android:text="Mężczyzna"
             android:id="@+id/radioButton2" />
     </RadioGroup>
-    <LinearLayout
-        android:orientation="horizontal"
+<!-- wzrost -->
+    <TextView
+        android:text="Wzrost"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1">
-        <TextView
-            android:text="Wzrost"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView1" />
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50px"
-            android:id="@+id/editText1"
-            android:inputType="number"
-            android:lines="1"
-            android:ems="3"
-            android:gravity="center"
-            android:text="186" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:id="@+id/textView1" />
+    <EditText
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20"
+        android:inputType="number"
+        android:lines="1"
+        android:ems="3"
+        android:text="186"
+        android:id="@+id/editText1"
+        android:layout_marginBottom="25px" />
+<!-- waga-->
+    <TextView
+        android:text="Waga"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1">
-        <TextView
-            android:text="Waga"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2" />
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50px"
-            android:id="@+id/editText2"
-            android:inputType="number"
-            android:lines="1"
-            android:ems="3"
-            android:gravity="center"
-            android:text="80" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:id="@+id/textView2" />
+    <EditText
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20"
+        android:inputType="number"
+        android:lines="1"
+        android:ems="3"
+        android:text="80"
+        android:id="@+id/editText2"
+        android:layout_marginBottom="25px" />
+<!-- wiek-->
+    <TextView
+        android:text="Wiek"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1">
-        <TextView
-            android:text="Wiek"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView3" />
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText3"
-            android:layout_marginLeft="50px"
-            android:inputType="number"
-            android:lines="1"
-            android:ems="3"
-            android:text="25" />
-    </LinearLayout>
+        android:gravity="center"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:id="@+id/textView3" />
+    <EditText
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20"
+        android:inputType="number"
+        android:lines="1"
+        android:ems="3"
+        android:text="25"
+        android:id="@+id/editText3"
+        android:layout_marginBottom="25px" />
+<!-- przycisk dalej-->
     <Button
         android:text="Dalej"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button1"
-        android:layout_marginTop="50px" />
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:background="@drawable/przycisk"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:id="@+id/button1" />
 </LinearLayout>
