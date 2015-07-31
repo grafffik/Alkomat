@@ -90,11 +90,11 @@ namespace Alkomat
 			// aapt resource value: 0x7f05000e
 			public const int iloscDuzePiwo = 2131034126;
 			
-			// aapt resource value: 0x7f050012
-			public const int iloscLekkiePiwo = 2131034130;
-			
 			// aapt resource value: 0x7f050015
-			public const int iloscMalePiwo = 2131034133;
+			public const int iloscLekkiePiwo = 2131034133;
+			
+			// aapt resource value: 0x7f050012
+			public const int iloscMalePiwo = 2131034130;
 			
 			// aapt resource value: 0x7f05001b
 			public const int iloscSzampana = 2131034139;
@@ -108,11 +108,11 @@ namespace Alkomat
 			// aapt resource value: 0x7f05001e
 			public const int iloscWodkaMala = 2131034142;
 			
-			// aapt resource value: 0x7f050011
-			public const int lekkiepiwo = 2131034129;
-			
 			// aapt resource value: 0x7f050014
-			public const int malepiwo = 2131034132;
+			public const int lekkiepiwo = 2131034132;
+			
+			// aapt resource value: 0x7f050011
+			public const int malepiwo = 2131034129;
 			
 			// aapt resource value: 0x7f05000d
 			public const int przyciskMinus = 2131034125;
@@ -135,11 +135,11 @@ namespace Alkomat
 			// aapt resource value: 0x7f05000b
 			public const int tableRow1 = 2131034123;
 			
-			// aapt resource value: 0x7f050010
-			public const int tableRow2 = 2131034128;
-			
 			// aapt resource value: 0x7f050013
-			public const int tableRow3 = 2131034131;
+			public const int tableRow2 = 2131034131;
+			
+			// aapt resource value: 0x7f050010
+			public const int tableRow3 = 2131034128;
 			
 			// aapt resource value: 0x7f050016
 			public const int tableRow4 = 2131034134;
@@ -192,6 +192,9 @@ namespace Alkomat
 			
 			// aapt resource value: 0x7f030001
 			public const int ObliczPromile = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int podajGodzine = 2130903042;
 			
 			static Layout()
 			{

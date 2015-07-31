@@ -21,6 +21,15 @@ namespace Alkomat
 
             // Create your application here
             SetContentView(Resource.Layout.ObliczPromile);
+
+            Button buttonObliczPromileDalej = FindViewById<Button>(Resource.Id.buttonObliczPromileDalej);
+            buttonObliczPromileDalej.Click += ButtonObliczPromileDalej_Click;
+        }
+
+        private void ButtonObliczPromileDalej_Click(object sender, EventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(podajGodzine));
+            this.StartActivity(intent);
         }
     }
 }

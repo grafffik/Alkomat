@@ -21,13 +21,8 @@ namespace Alkomat
             Alcolator.ExampleTest();
             SetContentView(Resource.Layout.Main);
 
-            //przycisk Dalej
             Button buttonDalej = FindViewById<Button>(Resource.Id.buttonDalej);
-
             buttonDalej.Click += ButtonDalej_Click;
-
-
-
         }
 
         private void ButtonDalej_Click(object sender, EventArgs e)
