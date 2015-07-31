@@ -27,10 +27,22 @@ namespace Alkomat
 
             // Create your application here
             TimePicker zegar = FindViewById<TimePicker>(Resource.Id.timePicker1);
-            zegar.Click += Zegar_Click;
+            zegar.Click += Zegar_Click1;
             Button buttonPodajGodzine = FindViewById<Button>(Resource.Id.buttonPodajGodzine);
             buttonPodajGodzine.Click += ButtonPodajGodzine_Click;
 
+            godziny = DateTime.Now.Hour;
+            minuty = DateTime.Now.Minute;
+            double czasObecny = godziny + (minuty / 60);
+
+            // czasPicia = czasObecny - czas z timePickera
+            // tyle ze w nim jest czas am/ap. trzeba ustawiæ 24h
+
+        }
+
+        private void Zegar_Click1(object sender, EventArgs e)
+        {
+           
         }
 
         private void ButtonPodajGodzine_Click(object sender, EventArgs e)
@@ -39,10 +51,6 @@ namespace Alkomat
             this.StartActivity(intent);
         }
 
-        private void Zegar_Click(object sender, EventArgs e)
-        {
-            godziny = DateTime.Now.Hour;
-            minuty = DateTime.Now.Minute;
-        }
+        
     }
 }

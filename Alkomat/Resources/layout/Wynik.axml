@@ -16,7 +16,7 @@
         android:paddingRight="10px" />
     <TextView
         android:text="0,34 ‰"
-        android:textColor="#139DDE"
+        android:textColor="#FF0000"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,37 +25,6 @@
         android:paddingRight="10px"
         android:id="@+id/textView_AktulnePromile"
         android:textStyle="bold" />
-    <TextView
-        android:text="NAJWIĘKSZE STĘŻENIE"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:id="@+id/TextView_NajwiekszeStezenie"
-        android:paddingTop="50px"
-        android:paddingBottom="50px"
-        android:paddingLeft="10px"
-        android:paddingRight="10px" />
-    <TextView
-        android:text="2,11 ‰"
-        android:textColor="#FF0000"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingLeft="10px"
-        android:paddingRight="10px"
-        android:id="@+id/TextView_NajwiekszeStezeniePromile" />
-    <TextView
-        android:text="o godz. 23:11"
-        android:textColor="#FF0000"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingLeft="10px"
-        android:paddingRight="10px"
-        android:id="@+id/TextView_NajwiekszeStezenieGodzina" />
     <TextView
         android:text="DOPUSZCZALNE STĘŻENIE DLA KIEROWCÓW 0,02 ‰ BĘDZIE"
         android:textAppearance="?android:attr/textAppearanceMedium"

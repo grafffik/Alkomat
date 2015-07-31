@@ -56,7 +56,6 @@
     <Compile Include="Entities\Promile.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Mechanics\Alcolator.cs" />
-    <Compile Include="Mechanics\Globals.cs" />
     <Compile Include="ObliczPromile.cs" />
     <Compile Include="podajGodzine.cs" />
     <Compile Include="Reklama.cs" />

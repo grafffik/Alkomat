@@ -15,32 +15,23 @@ namespace Alkomat.Mechanics
 {
     public static class Alcolator
     {
-        public static void ExampleTest()
+        public static void Wyliczamy()
         {
-            Alcohol beer = new Alcohol(500, 5.5);
-            Alcohol vodka = new Alcohol(100, 40.0);
+            /*
+            Wynik = (A/TBW)*0.8 - (T*e)
+            gdzie:
+            Wynik - zawartoœæ alkoholu we krwi w promilach
+            A - wspolczynnik iloœci wypitego czystego alkoholu w gramach
+            T - czas spêdzony na spo¿ywaniu produktów alkoholowych (w godzinach)
+            e - wspó³czynnik eliminacji alkoholu z organizmu wynosz¹cy: 0.2 promila na godzinê dla osób pij¹cych czêsto
+            */
 
-            //tworzy nowa osobe, funkcja tworzaca odrazu wylicza Redukcje Alkoholu u osoby
-            Person jerry = new Person("Jaros³aw", "Male", Globals._averageRatio, 160, 210, 38);
-            //jerry pije piwko, wodke i znowu piwko
-            jerry.Drink(beer);
-            jerry.Drink(vodka);
-            jerry.Drink(beer);
+            var tbw = Zmienne.tbw;
+            var wspolczynnikA = Zmienne.wspolczynnikA;
+            var czasPicia = Zmienne.czasPicia;
+            var wynik = Zmienne.wynik;
 
-            //Set wylicza zawartosc alkoholu we krwi dla danej osoby w promilach
-            //( korzysta z redukcji osoby i akutalnego poziomu alkoholu w gramach ._Dranked.Value-ilosc alko w gramach
-            var aktualnyPromil = jerry.GetPromile();
-            jerry.PoMinutach(60);
-            jerry.Drink(beer);
-            var poGodziniePromil = jerry.GetPromile();
-            jerry.PoMinutach(300);
-            var Po5godzinach = jerry.GetPromile();
-            //przeliczenie alko po 60 minutach, Ratio to spalanie alko/minute np. 60 * 0.20
-           // jerry.StartPromile.Process(60, jerry.Ratio);
-           // var poGodziniePromil = jerry.StartPromile.Value;
-           
-            //Globals._allowedAmount;
-
+            wynik = (wspolczynnikA / tbw) * 0.8 - (czasPicia * 0.2);
         }
     }
 }
