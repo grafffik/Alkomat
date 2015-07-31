@@ -24,6 +24,8 @@ namespace Alkomat
 
             Button buttonObliczPromileDalej = FindViewById<Button>(Resource.Id.buttonObliczPromileDalej);
             buttonObliczPromileDalej.Click += ButtonObliczPromileDalej_Click;
+
+            
         }
 
         private void ButtonObliczPromileDalej_Click(object sender, EventArgs e)
