@@ -35,7 +35,8 @@ namespace Alkomat
 
         private void ButtonPodajGodzine_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Intent intent = new Intent(this, typeof(Reklama));
+            this.StartActivity(intent);
         }
 
         private void Zegar_Click(object sender, EventArgs e)

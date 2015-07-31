@@ -28,6 +28,22 @@ namespace Alkomat
 		{
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int androidcolors = 2131034112;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -37,6 +53,52 @@ namespace Alkomat
 			}
 			
 			private Attribute()
+			{
+			}
+		}
+		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int blue = 2130968576;
+			
+			// aapt resource value: 0x7f040005
+			public const int darkblue = 2130968581;
+			
+			// aapt resource value: 0x7f040007
+			public const int darkgreen = 2130968583;
+			
+			// aapt resource value: 0x7f040008
+			public const int darkorange = 2130968584;
+			
+			// aapt resource value: 0x7f040006
+			public const int darkpurple = 2130968582;
+			
+			// aapt resource value: 0x7f040009
+			public const int darkred = 2130968585;
+			
+			// aapt resource value: 0x7f040002
+			public const int green = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int orange = 2130968579;
+			
+			// aapt resource value: 0x7f040001
+			public const int purple = 2130968577;
+			
+			// aapt resource value: 0x7f040004
+			public const int red = 2130968580;
+			
+			// aapt resource value: 0x7f04000a
+			public const int yellow = 2130968586;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
 			{
 			}
 		}
@@ -72,119 +134,146 @@ namespace Alkomat
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050023
-			public const int TextViewKtoraGodzina = 2131034147;
+			// aapt resource value: 0x7f070023
+			public const int TextViewKtoraGodzina = 2131165219;
 			
-			// aapt resource value: 0x7f05000a
-			public const int buttonDalej = 2131034122;
+			// aapt resource value: 0x7f070027
+			public const int TextView_AktualnyWynik = 2131165223;
 			
-			// aapt resource value: 0x7f050022
-			public const int buttonObliczPromileDalej = 2131034146;
+			// aapt resource value: 0x7f07002c
+			public const int TextView_DopuszczalneStezenie = 2131165228;
 			
-			// aapt resource value: 0x7f050025
-			public const int buttonPodajGodzine = 2131034149;
+			// aapt resource value: 0x7f07002d
+			public const int TextView_DopuszczalneStezenieGodzina = 2131165229;
 			
-			// aapt resource value: 0x7f05000c
-			public const int duzepiwo = 2131034124;
+			// aapt resource value: 0x7f070029
+			public const int TextView_NajwiekszeStezenie = 2131165225;
 			
-			// aapt resource value: 0x7f050005
-			public const int editText1 = 2131034117;
+			// aapt resource value: 0x7f07002b
+			public const int TextView_NajwiekszeStezenieGodzina = 2131165227;
 			
-			// aapt resource value: 0x7f050007
-			public const int editText2 = 2131034119;
+			// aapt resource value: 0x7f07002a
+			public const int TextView_NajwiekszeStezeniePromile = 2131165226;
 			
-			// aapt resource value: 0x7f050009
-			public const int editText3 = 2131034121;
+			// aapt resource value: 0x7f07000a
+			public const int buttonDalej = 2131165194;
 			
-			// aapt resource value: 0x7f05000e
-			public const int iloscDuzePiwo = 2131034126;
+			// aapt resource value: 0x7f070022
+			public const int buttonObliczPromileDalej = 2131165218;
 			
-			// aapt resource value: 0x7f050015
-			public const int iloscLekkiePiwo = 2131034133;
+			// aapt resource value: 0x7f070025
+			public const int buttonPodajGodzine = 2131165221;
 			
-			// aapt resource value: 0x7f050012
-			public const int iloscMalePiwo = 2131034130;
+			// aapt resource value: 0x7f070026
+			public const int buttonReklama = 2131165222;
 			
-			// aapt resource value: 0x7f05001b
-			public const int iloscSzampana = 2131034139;
+			// aapt resource value: 0x7f07002e
+			public const int buttonWynik = 2131165230;
 			
-			// aapt resource value: 0x7f050018
-			public const int iloscWina = 2131034136;
+			// aapt resource value: 0x7f07000c
+			public const int duzepiwo = 2131165196;
 			
-			// aapt resource value: 0x7f050021
-			public const int iloscWodkaDuza = 2131034145;
+			// aapt resource value: 0x7f070005
+			public const int editText1 = 2131165189;
 			
-			// aapt resource value: 0x7f05001e
-			public const int iloscWodkaMala = 2131034142;
+			// aapt resource value: 0x7f070007
+			public const int editText2 = 2131165191;
 			
-			// aapt resource value: 0x7f050014
-			public const int lekkiepiwo = 2131034132;
+			// aapt resource value: 0x7f070009
+			public const int editText3 = 2131165193;
 			
-			// aapt resource value: 0x7f050011
-			public const int malepiwo = 2131034129;
+			// aapt resource value: 0x7f07000e
+			public const int iloscDuzePiwo = 2131165198;
 			
-			// aapt resource value: 0x7f05000d
-			public const int przyciskMinus = 2131034125;
+			// aapt resource value: 0x7f070015
+			public const int iloscLekkiePiwo = 2131165205;
 			
-			// aapt resource value: 0x7f05000f
-			public const int przyciskPlus = 2131034127;
+			// aapt resource value: 0x7f070012
+			public const int iloscMalePiwo = 2131165202;
 			
-			// aapt resource value: 0x7f050003
-			public const int radioButton1 = 2131034115;
+			// aapt resource value: 0x7f07001b
+			public const int iloscSzampana = 2131165211;
 			
-			// aapt resource value: 0x7f050004
-			public const int radioButton2 = 2131034116;
+			// aapt resource value: 0x7f070018
+			public const int iloscWina = 2131165208;
 			
-			// aapt resource value: 0x7f050002
-			public const int radioGroup1 = 2131034114;
+			// aapt resource value: 0x7f070021
+			public const int iloscWodkaDuza = 2131165217;
 			
-			// aapt resource value: 0x7f05001a
-			public const int szampan = 2131034138;
+			// aapt resource value: 0x7f07001e
+			public const int iloscWodkaMala = 2131165214;
 			
-			// aapt resource value: 0x7f05000b
-			public const int tableRow1 = 2131034123;
+			// aapt resource value: 0x7f070014
+			public const int lekkiepiwo = 2131165204;
 			
-			// aapt resource value: 0x7f050013
-			public const int tableRow2 = 2131034131;
+			// aapt resource value: 0x7f070011
+			public const int malepiwo = 2131165201;
 			
-			// aapt resource value: 0x7f050010
-			public const int tableRow3 = 2131034128;
+			// aapt resource value: 0x7f07000d
+			public const int przyciskMinus = 2131165197;
 			
-			// aapt resource value: 0x7f050016
-			public const int tableRow4 = 2131034134;
+			// aapt resource value: 0x7f07000f
+			public const int przyciskPlus = 2131165199;
 			
-			// aapt resource value: 0x7f050019
-			public const int tableRow5 = 2131034137;
+			// aapt resource value: 0x7f070003
+			public const int radioButton1 = 2131165187;
 			
-			// aapt resource value: 0x7f05001c
-			public const int tableRow6 = 2131034140;
+			// aapt resource value: 0x7f070004
+			public const int radioButton2 = 2131165188;
 			
-			// aapt resource value: 0x7f05001f
-			public const int tableRow7 = 2131034143;
+			// aapt resource value: 0x7f070002
+			public const int radioGroup1 = 2131165186;
 			
-			// aapt resource value: 0x7f050001
-			public const int textView1 = 2131034113;
+			// aapt resource value: 0x7f07001a
+			public const int szampan = 2131165210;
 			
-			// aapt resource value: 0x7f050006
-			public const int textView2 = 2131034118;
+			// aapt resource value: 0x7f07000b
+			public const int tableRow1 = 2131165195;
 			
-			// aapt resource value: 0x7f050008
-			public const int textView3 = 2131034120;
+			// aapt resource value: 0x7f070013
+			public const int tableRow2 = 2131165203;
 			
-			// aapt resource value: 0x7f050000
-			public const int textView4 = 2131034112;
+			// aapt resource value: 0x7f070010
+			public const int tableRow3 = 2131165200;
 			
-			// aapt resource value: 0x7f050024
-			public const int timePicker1 = 2131034148;
+			// aapt resource value: 0x7f070016
+			public const int tableRow4 = 2131165206;
 			
-			// aapt resource value: 0x7f050017
-			public const int wino = 2131034135;
+			// aapt resource value: 0x7f070019
+			public const int tableRow5 = 2131165209;
 			
-			// aapt resource value: 0x7f050020
-			public const int wodkaDuza = 2131034144;
+			// aapt resource value: 0x7f07001c
+			public const int tableRow6 = 2131165212;
 			
-			// aapt resource value: 0x7f05001d
-			public const int wodkaMala = 2131034141;
+			// aapt resource value: 0x7f07001f
+			public const int tableRow7 = 2131165215;
+			
+			// aapt resource value: 0x7f070001
+			public const int textView1 = 2131165185;
+			
+			// aapt resource value: 0x7f070006
+			public const int textView2 = 2131165190;
+			
+			// aapt resource value: 0x7f070008
+			public const int textView3 = 2131165192;
+			
+			// aapt resource value: 0x7f070000
+			public const int textView4 = 2131165184;
+			
+			// aapt resource value: 0x7f070028
+			public const int textView_AktulnePromile = 2131165224;
+			
+			// aapt resource value: 0x7f070024
+			public const int timePicker1 = 2131165220;
+			
+			// aapt resource value: 0x7f070017
+			public const int wino = 2131165207;
+			
+			// aapt resource value: 0x7f070020
+			public const int wodkaDuza = 2131165216;
+			
+			// aapt resource value: 0x7f07001d
+			public const int wodkaMala = 2131165213;
 			
 			static Id()
 			{
@@ -208,6 +297,12 @@ namespace Alkomat
 			// aapt resource value: 0x7f030002
 			public const int podajGodzine = 2130903042;
 			
+			// aapt resource value: 0x7f030003
+			public const int Reklama = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int Wynik = 2130903044;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -221,11 +316,11 @@ namespace Alkomat
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
+			// aapt resource value: 0x7f060001
+			public const int ApplicationName = 2131099649;
 			
-			// aapt resource value: 0x7f040000
-			public const int Hello = 2130968576;
+			// aapt resource value: 0x7f060000
+			public const int Hello = 2131099648;
 			
 			static String()
 			{
