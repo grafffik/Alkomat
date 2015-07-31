@@ -48,13 +48,16 @@ namespace Alkomat
 			public const int Icon = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int przycisk = 2130837505;
+			public const int ikona = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int przyciskMinus = 2130837506;
+			public const int przycisk = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int przyciskPlus = 2130837507;
+			public const int przyciskMinus = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int przyciskPlus = 2130837508;
 			
 			static Drawable()
 			{
@@ -69,11 +72,17 @@ namespace Alkomat
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050023
+			public const int TextViewKtoraGodzina = 2131034147;
+			
 			// aapt resource value: 0x7f05000a
 			public const int buttonDalej = 2131034122;
 			
 			// aapt resource value: 0x7f050022
 			public const int buttonObliczPromileDalej = 2131034146;
+			
+			// aapt resource value: 0x7f050025
+			public const int buttonPodajGodzine = 2131034149;
 			
 			// aapt resource value: 0x7f05000c
 			public const int duzepiwo = 2131034124;
@@ -164,6 +173,9 @@ namespace Alkomat
 			
 			// aapt resource value: 0x7f050000
 			public const int textView4 = 2131034112;
+			
+			// aapt resource value: 0x7f050024
+			public const int timePicker1 = 2131034148;
 			
 			// aapt resource value: 0x7f050017
 			public const int wino = 2131034135;
