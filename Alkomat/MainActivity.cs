@@ -13,16 +13,22 @@ namespace Alkomat
     [Activity(Label = "Alkomat", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        double tbw = Zmienne.tbw;
-        double wzrost = Zmienne.wzrost;
-        double waga = Zmienne.waga;
-        double wiek = Zmienne.wiek;
+        
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+
+            double tbw = 0;
+            double wzrost = 0;
+            double waga = 0;
+            double wiek = 0;
+
+            tbw = Zmienne.tbw;
+            wzrost = Zmienne.wzrost;
+            waga = Zmienne.waga;
+            wiek = Zmienne.wiek;
             
-            //Alcolator.Wyliczamy();
             SetContentView(Resource.Layout.Main);
 
             Button buttonDalej = FindViewById<Button>(Resource.Id.buttonDalej);   
@@ -34,6 +40,7 @@ namespace Alkomat
 
             buttonDalej.Click += ButtonDalej_Click;   
         }
+        /*
         public double zczytajPola(EditText editText1, EditText editText2, EditText editText3, RadioButton radio_kob, RadioButton radio_mez)
         {
             //wyczytałem, że dane z edittextów wpierw trzeba do stringa a dopiero potem do double.
@@ -55,6 +62,7 @@ namespace Alkomat
                 }
             return tbw;
         }
+        */
 
         private void ButtonDalej_Click(object sender, EventArgs e)
         {
