@@ -55,13 +55,13 @@
                     android:layout_gravity="center" />
             <!-- Kolumna 3 -->
                 <TextView
-                    android:id="@+id/iloscDuzePiwo"
+                    android:id="@+id/tv1"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:padding="10dip"
                     android:layout_margin="4dip"
                     android:layout_weight="1"
-                    android:text="0"
+                    android:text="15"
                     android:inputType="number"
                     android:layout_gravity="center"
                     android:gravity="center" />
@@ -110,7 +110,7 @@
                     android:layout_gravity="center" />
             <!-- Kolumna 3 -->
                 <TextView
-                    android:id="@+id/iloscMalePiwo"
+                    android:id="@+id/tv2"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:padding="10dip"
@@ -165,7 +165,7 @@
                     android:layout_gravity="center" />
             <!-- Kolumna 3 -->
                 <TextView
-                    android:id="@+id/iloscLekkiePiwo"
+                    android:id="@+id/tv3"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:padding="10dip"
@@ -220,7 +220,7 @@
                     android:layout_gravity="center" />
             <!-- Kolumna 3 -->
                 <TextView
-                    android:id="@+id/iloscWina"
+                    android:id="@+id/tv4"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:padding="10dip"
@@ -275,7 +275,7 @@
                     android:layout_gravity="center" />
             <!-- Kolumna 3 -->
                 <TextView
-                    android:id="@+id/iloscSzampana"
+                    android:id="@+id/tv5"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:padding="10dip"
@@ -330,7 +330,7 @@
                     android:layout_gravity="center" />
             <!-- Kolumna 3 -->
                 <TextView
-                    android:id="@+id/iloscWodkaMala"
+                    android:id="@+id/tv6"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:padding="10dip"
@@ -385,7 +385,7 @@
                     android:layout_gravity="center" />
             <!-- Kolumna 3 -->
                 <TextView
-                    android:id="@+id/iloscWodkaDuza"
+                    android:id="@+id/tv7"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:padding="10dip"

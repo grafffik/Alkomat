@@ -173,27 +173,6 @@ namespace Alkomat
 			// aapt resource value: 0x7f070009
 			public const int editText3 = 2131165193;
 			
-			// aapt resource value: 0x7f07000e
-			public const int iloscDuzePiwo = 2131165198;
-			
-			// aapt resource value: 0x7f070015
-			public const int iloscLekkiePiwo = 2131165205;
-			
-			// aapt resource value: 0x7f070012
-			public const int iloscMalePiwo = 2131165202;
-			
-			// aapt resource value: 0x7f07001b
-			public const int iloscSzampana = 2131165211;
-			
-			// aapt resource value: 0x7f070018
-			public const int iloscWina = 2131165208;
-			
-			// aapt resource value: 0x7f070021
-			public const int iloscWodkaDuza = 2131165217;
-			
-			// aapt resource value: 0x7f07001e
-			public const int iloscWodkaMala = 2131165214;
-			
 			// aapt resource value: 0x7f070014
 			public const int lekkiepiwo = 2131165204;
 			
@@ -256,6 +235,27 @@ namespace Alkomat
 			
 			// aapt resource value: 0x7f070024
 			public const int timePicker1 = 2131165220;
+			
+			// aapt resource value: 0x7f07000e
+			public const int tv1 = 2131165198;
+			
+			// aapt resource value: 0x7f070012
+			public const int tv2 = 2131165202;
+			
+			// aapt resource value: 0x7f070015
+			public const int tv3 = 2131165205;
+			
+			// aapt resource value: 0x7f070018
+			public const int tv4 = 2131165208;
+			
+			// aapt resource value: 0x7f07001b
+			public const int tv5 = 2131165211;
+			
+			// aapt resource value: 0x7f07001e
+			public const int tv6 = 2131165214;
+			
+			// aapt resource value: 0x7f070021
+			public const int tv7 = 2131165217;
 			
 			// aapt resource value: 0x7f070017
 			public const int wino = 2131165207;
