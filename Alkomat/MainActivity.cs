@@ -36,7 +36,7 @@ namespace Alkomat
         }
         public double zczytajPola(EditText editText1, EditText editText2, EditText editText3, RadioButton radio_kob, RadioButton radio_mez)
         {
-            //wyczytałem, że dane z edittextów wpierw trzeba do stringa a dopiero potem do double
+            //wyczytałem, że dane z edittextów wpierw trzeba do stringa a dopiero potem do double.
 
             string dane1 = Convert.ToString(editText1);
             string dane2 = Convert.ToString(editText2);
