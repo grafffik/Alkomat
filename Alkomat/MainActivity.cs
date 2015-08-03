@@ -10,7 +10,7 @@ using Alkomat.Mechanics;
 
 namespace Alkomat
 {
-    [Activity(Label = "Alkomat", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Alkomat", MainLauncher = true, Icon = "@drawable/ikona")]
     public class MainActivity : Activity
     {
         Button buttonDalej;

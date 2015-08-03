@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -54,16 +53,8 @@ namespace Alkomat
             buttonObliczPromileDalej.Click += ButtonObliczPromileDalej_Click;            
         }
         
-        public double zsumujMelanz()
+        public void zsumujMelanz()
         {
-            string alko1 = Convert.ToString(tv1);
-            string alko2 = Convert.ToString(tv2);
-            string alko3 = Convert.ToString(tv3);
-            string alko4 = Convert.ToString(tv4);
-            string alko5 = Convert.ToString(tv5);
-            string alko6 = Convert.ToString(tv6);
-            string alko7 = Convert.ToString(tv7);
-
             Zmienne.iloscDuzePiwo = Convert.ToInt32(tv1.Text);
             Zmienne.iloscMalePiwo = Convert.ToInt32(tv2.Text);
             Zmienne.iloscLekkiePiwo = Convert.ToInt32(tv3.Text);
@@ -80,9 +71,9 @@ namespace Alkomat
             double AiloscWodkaMala = Zmienne.iloscWodkaMala * 30 * 0.4 * 0.79;
             double AiloscWodkaDuza = Zmienne.iloscWodkaDuza * 50 * 0.4 * 0.79;
 
-            Zmienne.wspolczynnikA = Zmienne.AiloscDuzePiwo + Zmienne.AiloscMalePiwo + Zmienne.AiloscLekkiePiwo + Zmienne.AiloscWina + Zmienne.AiloscSzampana + Zmienne.AiloscWodkaMala + Zmienne.AiloscWodkaDuza;
-
-            return Zmienne.wspolczynnikA;
+            Zmienne.wspolczynnikA = AiloscDuzePiwo + AiloscMalePiwo + AiloscLekkiePiwo + AiloscWina + AiloscSzampana + AiloscWodkaMala + AiloscWodkaDuza;
+            
+            //return Zmienne.wspolczynnikA;
         }
 
         private void ButtonObliczPromileDalej_Click(object sender, EventArgs e)

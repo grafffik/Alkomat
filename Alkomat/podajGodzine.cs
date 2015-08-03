@@ -15,14 +15,13 @@ namespace Alkomat
     [Activity(Label = "podajGodzine")]
     public class podajGodzine : Activity
     {
-        int godziny1;
-        int minuty1;
+        const int TIME_DIALOG_ID = 0;
         double czas1;
+        double czas2;
+        double g1;
+        double m1;
         double g2;
         double m2;
-        double czas2;
-
-        const int TIME_DIALOG_ID = 0;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -33,28 +32,33 @@ namespace Alkomat
             Zmienne.czasPicia = 0;
 
             // Create your application here
-            TimePicker zegar = FindViewById<TimePicker>(Resource.Id.timePicker1);
-            zegar.SetIs24HourView(Java.Lang.Boolean.True);
+
+            //godzina pobierana z telefonu
+            g1 = DateTime.Now.Hour;
+            m1 = DateTime.Now.Minute;
             
-
-            godziny1 = DateTime.Now.Hour;
-            minuty1 = DateTime.Now.Minute;
-
-            double g1 = Convert.ToDouble(godziny1);
-            double m1 = Convert.ToDouble(minuty1);
+            //suma godzin i minut pobranych z telefonu            
             czas1 = g1 + (m1 / 60);
 
-            g2 = Convert.ToInt32(zegar.CurrentHour);
-            m2 = Convert.ToInt32(zegar.CurrentMinute);
+            //jak wywo³uje siê zegar w nowej metodzie to dziala liczenie, ale zegar jest am/pm
+            TimePicker zegar = FindViewById<TimePicker>(Resource.Id.timePicker1);
+            zegar.SetIs24HourView(Java.Lang.Boolean.True);
 
-            czas2 = g2 + (m2 / 60);
-            Zmienne.czasPicia = czas1 - czas2;            
+            //pobranie godziny i minut z zegara w apce
+            g2 = Convert.ToDouble(zegar.CurrentHour);
+            m2 = Convert.ToDouble(zegar.CurrentMinute);
             
+            //zsumowanie
+            czas2 = g2 + (m2 / 60);
+
+            //Zmienne.czasPicia to ile czasu mine³o od skoñczenia melan¿u do chwili obecnej
+            //ostatnia zmienna poczebna do wyniku
+            Zmienne.czasPicia = czas1 - czas2;
+
             Button buttonPodajGodzine = FindViewById<Button>(Resource.Id.buttonPodajGodzine);
             buttonPodajGodzine.Click += ButtonPodajGodzine_Click;
-
-        }
-
+        }        
+        
         private void ButtonPodajGodzine_Click(object sender, EventArgs e)
         {            
             Intent intent = new Intent(this, typeof(Reklama));

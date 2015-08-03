@@ -25,13 +25,16 @@ namespace Alkomat.Mechanics
             T - czas spêdzony na spo¿ywaniu produktów alkoholowych (w godzinach)
             e - wspó³czynnik eliminacji alkoholu z organizmu wynosz¹cy: 0.2 promila na godzinê dla osób pij¹cych czêsto
             */
-
+            Zmienne.wynik = 0;
             var tbw = Zmienne.tbw;
             var wspolczynnikA = Zmienne.wspolczynnikA;
             var czasPicia = Zmienne.czasPicia;
             var wynik = Zmienne.wynik;
 
-            wynik = (wspolczynnikA / tbw) * 0.8 - (czasPicia * 0.2);
+            wynik = (wspolczynnikA / tbw) * 0.8 - (czasPicia * 0.2);           
+           
+
         }
     }
 }
+ 
