@@ -38,12 +38,12 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
             android:text="Kobieta"
             android:id="@+id/radioButton1" />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:text="Mężczyzna"
             android:id="@+id/radioButton2" />
     </RadioGroup>
@@ -65,7 +65,7 @@
         android:inputType="number"
         android:lines="1"
         android:ems="3"
-        android:text="186"
+        android:text="180"
         android:id="@+id/editText1"
         android:layout_marginBottom="25px" />
 <!-- waga-->
@@ -107,7 +107,7 @@
         android:inputType="number"
         android:lines="1"
         android:ems="3"
-        android:text="25"
+        android:text="20"
         android:id="@+id/editText3"
         android:layout_marginBottom="50px" />
 <!-- przycisk dalej-->

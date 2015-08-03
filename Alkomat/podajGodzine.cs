@@ -44,17 +44,6 @@ namespace Alkomat
             //jak wywo³uje siê zegar w nowej metodzie to dziala liczenie, ale zegar jest am/pm
             zegar = FindViewById<TimePicker>(Resource.Id.timePicker1);
             zegar.SetIs24HourView(Java.Lang.Boolean.True);
-
-            //pobranie godziny i minut z zegara w apce
-            
-            
-            //zsumowanie
-            
-
-            //Zmienne.czasPicia to ile czasu mine³o od skoñczenia melan¿u do chwili obecnej
-            //ostatnia zmienna poczebna do wyniku
-            
-
             Button buttonPodajGodzine = FindViewById<Button>(Resource.Id.buttonPodajGodzine);
             buttonPodajGodzine.Click += ButtonPodajGodzine_Click;
         }
@@ -63,7 +52,18 @@ namespace Alkomat
             g2 = Convert.ToDouble(zegar.CurrentHour);
             m2 = Convert.ToDouble(zegar.CurrentMinute);
             czas2 = g2 + (m2 / 60);
-            Zmienne.czasPicia = czas1 - czas2;
+
+            //jezeli godzina testu(w double) jest mniejsza ni¿ godzina koñca melan¿u, dodaje 12h by liczba by³a wg. doby i pory dnia
+
+            if (czas2 > czas1)
+            {
+                czas1 = czas1 + 12;
+                Zmienne.czasPicia = czas1 - czas2;
+            }
+            else if (czas1 >= czas2)
+            {
+                Zmienne.czasPicia = czas1 - czas2;
+            }
         }        
         
         private void ButtonPodajGodzine_Click(object sender, EventArgs e)
