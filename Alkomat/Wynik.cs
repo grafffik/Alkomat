@@ -28,10 +28,9 @@ namespace Alkomat
             Button buttonWynik = FindViewById<Button>(Resource.Id.buttonWynik);
 
             textView_AktulnePromile = FindViewById<TextView>(Resource.Id.textView_AktulnePromile);
-            Zmienne.wynik.toString();
+            textView_AktulnePromile.Text = Math.Round(Zmienne.wynik, 2).ToString();
 
-            
-            buttonWynik.Click += buttonWynik_Click;  
+            buttonWynik.Click += buttonWynik_Click;
         }
 
         private void buttonWynik_Click(object sender, EventArgs e)
