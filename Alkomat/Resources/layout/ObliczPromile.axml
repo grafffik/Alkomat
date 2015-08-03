@@ -42,7 +42,7 @@
                     android:textStyle="bold" />
             <!-- Kolumna 2 -->
                 <Button
-                    android:id="@+id/przyciskMinus"
+                    android:id="@+id/buttonM1"
                     android:text="-"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
@@ -56,18 +56,19 @@
             <!-- Kolumna 3 -->
                 <TextView
                     android:id="@+id/tv1"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:padding="10dip"
                     android:layout_margin="4dip"
                     android:layout_weight="1"
-                    android:text="4"
+                    android:text="0"
                     android:inputType="number"
                     android:layout_gravity="center"
                     android:gravity="center" />
             <!-- Kolumna 4 -->
                 <Button
-                    android:id="@+id/przyciskPlus"
+                    android:id="@+id/buttonP1"
                     android:text="+"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
@@ -97,7 +98,7 @@
                     android:textStyle="bold" />
             <!-- Kolumna 2 -->
                 <Button
-                    android:id="@id/przyciskMinus"
+                    android:id="@+id/buttonM2"
                     android:text="-"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
@@ -111,6 +112,7 @@
             <!-- Kolumna 3 -->
                 <TextView
                     android:id="@+id/tv2"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:padding="10dip"
@@ -122,7 +124,7 @@
                     android:gravity="center" />
             <!-- Kolumna 4 -->
                 <Button
-                    android:id="@id/przyciskPlus"
+                    android:id="@+id/buttonP2"
                     android:text="+"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
@@ -152,7 +154,7 @@
                     android:textStyle="bold" />
             <!-- Kolumna 2 -->
                 <Button
-                    android:id="@id/przyciskMinus"
+                    android:id="@+id/buttonM3"
                     android:text="-"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
@@ -166,6 +168,7 @@
             <!-- Kolumna 3 -->
                 <TextView
                     android:id="@+id/tv3"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:padding="10dip"
@@ -177,7 +180,7 @@
                     android:gravity="center" />
             <!-- Kolumna 4 -->
                 <Button
-                    android:id="@id/przyciskPlus"
+                    android:id="@+id/buttonP3"
                     android:text="+"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
@@ -207,7 +210,7 @@
                     android:textStyle="bold" />
             <!-- Kolumna 2 -->
                 <Button
-                    android:id="@id/przyciskMinus"
+                    android:id="@+id/buttonM4"
                     android:text="-"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
@@ -221,6 +224,7 @@
             <!-- Kolumna 3 -->
                 <TextView
                     android:id="@+id/tv4"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:padding="10dip"
@@ -232,7 +236,7 @@
                     android:gravity="center" />
             <!-- Kolumna 4 -->
                 <Button
-                    android:id="@id/przyciskPlus"
+                    android:id="@+id/buttonP4"
                     android:text="+"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
@@ -262,7 +266,7 @@
                     android:textStyle="bold" />
             <!-- Kolumna 2 -->
                 <Button
-                    android:id="@id/przyciskMinus"
+                    android:id="@+id/buttonM5"
                     android:text="-"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
@@ -276,6 +280,7 @@
             <!-- Kolumna 3 -->
                 <TextView
                     android:id="@+id/tv5"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:padding="10dip"
@@ -287,7 +292,7 @@
                     android:gravity="center" />
             <!-- Kolumna 4 -->
                 <Button
-                    android:id="@id/przyciskPlus"
+                    android:id="@+id/buttonP5"
                     android:text="+"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
@@ -317,7 +322,7 @@
                     android:textStyle="bold" />
             <!-- Kolumna 2 -->
                 <Button
-                    android:id="@id/przyciskMinus"
+                    android:id="@+id/buttonM6"
                     android:text="-"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
@@ -331,6 +336,7 @@
             <!-- Kolumna 3 -->
                 <TextView
                     android:id="@+id/tv6"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:padding="10dip"
@@ -342,7 +348,7 @@
                     android:gravity="center" />
             <!-- Kolumna 4 -->
                 <Button
-                    android:id="@id/przyciskPlus"
+                    android:id="@+id/buttonP6"
                     android:text="+"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
@@ -372,7 +378,7 @@
                     android:textStyle="bold" />
             <!-- Kolumna 2 -->
                 <Button
-                    android:id="@id/przyciskMinus"
+                    android:id="@+id/buttonM7"
                     android:text="-"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
@@ -386,6 +392,7 @@
             <!-- Kolumna 3 -->
                 <TextView
                     android:id="@+id/tv7"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:padding="10dip"
@@ -397,7 +404,7 @@
                     android:gravity="center" />
             <!-- Kolumna 4 -->
                 <Button
-                    android:id="@id/przyciskPlus"
+                    android:id="@+id/buttonP7"
                     android:text="+"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
