@@ -16,17 +16,22 @@ namespace Alkomat
     [Activity(Label = "Wynik")]
     public class Wynik : Activity
     {
+        TextView textView_AktulnePromile;
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Wynik);
 
             // Create your application here
-            Button buttonWynik = FindViewById<Button>(Resource.Id.buttonWynik);
-            buttonWynik.Click += buttonWynik_Click;
-
             Alcolator.Wyliczamy();
+            Button buttonWynik = FindViewById<Button>(Resource.Id.buttonWynik);
 
+            textView_AktulnePromile = FindViewById<TextView>(Resource.Id.textView_AktulnePromile);
+            Zmienne.wynik.toString();
+
+            
+            buttonWynik.Click += buttonWynik_Click;  
         }
 
         private void buttonWynik_Click(object sender, EventArgs e)
