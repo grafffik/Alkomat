@@ -28,6 +28,9 @@ namespace Alkomat
             SetContentView(Resource.Layout.Wynik);
 
             // Create your application here
+            DateTime godzinaDopuszczalna;
+            DateTime godzinaWytrzezwienia;
+
             Alcolator.Wyliczamy();
             Alcolator.KiedyTrzezwy();
             Button buttonWynik = FindViewById<Button>(Resource.Id.buttonWynik);
@@ -38,7 +41,8 @@ namespace Alkomat
             textView_AktulnePromile.Text = Math.Round(Zmienne.wynik, 2).ToString();
             textView_AktulnePromile.Text = textView_AktulnePromile.Text + '‰';
 
-            
+            Zmienne.godzinaWytrzezwienia = DateTime.Now;
+            Zmienne.godzinaWytrzezwienia.AddHours(Zmienne.wynik2);
             double pob = Zmienne.wynik2;
             if (pob>24)
             {
@@ -47,7 +51,7 @@ namespace Alkomat
             }
 
             TextView_WytrzezwiejeszGodzina = FindViewById<TextView>(Resource.Id.TextView_WytrzezwiejeszGodzina);
-            TextView_WytrzezwiejeszGodzina.Text = Math.Round(pob, 2).ToString();
+            TextView_WytrzezwiejeszGodzina.Text = Zmienne.godzinaWytrzezwienia.ToShortTimeString();
             TextView_WytrzezwiejeszGodzina.Text = TextView_WytrzezwiejeszGodzina.Text.Replace(',', ':');
             TextView_WytrzezwiejeszGodzina.Text = "o godz: " + TextView_WytrzezwiejeszGodzina.Text;
 
@@ -59,8 +63,10 @@ namespace Alkomat
                 double b = pob2 - 24;
                 pob2 = b;
             }
+            Zmienne.godzinaDopuszczalna = DateTime.Now;
+            Zmienne.godzinaDopuszczalna.AddHours(pob2);
 
-            TextView_DopuszczalneStezenieGodzina.Text = Math.Round(pob2, 2).ToString();
+            TextView_DopuszczalneStezenieGodzina.Text = Zmienne.godzinaDopuszczalna.ToShortTimeString();
             TextView_DopuszczalneStezenieGodzina.Text = TextView_DopuszczalneStezenieGodzina.Text.Replace(',', ':');
             TextView_DopuszczalneStezenieGodzina.Text = "o godz: " + TextView_DopuszczalneStezenieGodzina.Text;
 

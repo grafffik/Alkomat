@@ -38,7 +38,7 @@ namespace Alkomat.Mechanics
 
             //tu liczy standardowo promile
             wynik = (wspolczynnikA / tbw) * 0.8 - (czasPicia * 0.2);
-
+           
             //czlowiek trzeŸwieje 0,2 na godzine, wiêc liczymy ile godzin zejdzie siê aby zbiæ promile do 0.
             //otrzymujemy liczbe godzin i minut po przecinku
             wynik2 = wynik / 0.2;
@@ -46,6 +46,7 @@ namespace Alkomat.Mechanics
             //dodajemuy do tego wartoœæ obecnego czasu 
             wynik2 = wynik2 + Zmienne.czas1;
             Zmienne.wynik2 = wynik2;
+            Zmienne.godzinaDopuszczalna.AddHours(wynik2);
         }
     }
 }

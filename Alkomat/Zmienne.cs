@@ -30,5 +30,7 @@ namespace Alkomat
         public static double czasPicia { get; set; }
         public static double wynik { get; set; }
         public static double wynik2 { get; set; }
+        public static DateTime godzinaWytrzezwienia { get; set; }
+        public static DateTime godzinaDopuszczalna { get; set; }
     }
 }
