@@ -26,7 +26,7 @@
         android:id="@+id/textView_AktulnePromile"
         android:textStyle="bold" />
     <TextView
-        android:text="DOPUSZCZALNE STĘŻENIE DLA KIEROWCÓW 0,02 ‰ BĘDZIE"
+        android:text="DOPUSZCZALNE STĘŻENIE DLA KIEROWCÓW 0,20 ‰ BĘDZIE"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
