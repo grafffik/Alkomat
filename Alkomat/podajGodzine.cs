@@ -42,7 +42,7 @@ namespace Alkomat
             czas1 = g1 + (m1 / 60);
 
             //jak wywo³uje siê zegar w nowej metodzie to dziala liczenie, ale zegar jest am/pm
-            TimePicker zegar = FindViewById<TimePicker>(Resource.Id.timePicker1);
+            zegar = FindViewById<TimePicker>(Resource.Id.timePicker1);
             zegar.SetIs24HourView(Java.Lang.Boolean.True);
 
             //pobranie godziny i minut z zegara w apce

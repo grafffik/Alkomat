@@ -31,8 +31,8 @@ namespace Alkomat.Mechanics
             var czasPicia = Zmienne.czasPicia;
             var wynik = Zmienne.wynik;
 
-            wynik = (wspolczynnikA / tbw) * 0.8 - (czasPicia * 0.2);           
-           
+            wynik = (wspolczynnikA / tbw) * 0.8 - (czasPicia * 0.2);
+            Zmienne.wynik = wynik;
 
         }
     }
