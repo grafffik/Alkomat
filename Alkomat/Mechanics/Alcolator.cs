@@ -17,14 +17,6 @@ namespace Alkomat.Mechanics
     {
         public static void Wyliczamy()
         {
-            /*
-            Wynik = (A/TBW)*0.8 - (T*e)
-            gdzie:
-            Wynik - zawartoœæ alkoholu we krwi w promilach
-            A - wspolczynnik iloœci wypitego czystego alkoholu w gramach
-            T - czas spêdzony na spo¿ywaniu produktów alkoholowych (w godzinach)
-            e - wspó³czynnik eliminacji alkoholu z organizmu wynosz¹cy: 0.2 promila na godzinê dla osób pij¹cych czêsto
-            */
             Zmienne.wynik = 0;
             var tbw = Zmienne.tbw;
             var wspolczynnikA = Zmienne.wspolczynnikA;
@@ -33,7 +25,27 @@ namespace Alkomat.Mechanics
 
             wynik = (wspolczynnikA / tbw) * 0.8 - (czasPicia * 0.2);
             Zmienne.wynik = wynik;
+        }
+        public static void KiedyTrzezwy()
+        {
+            Zmienne.wynik2 = 0;
+            var tbw = Zmienne.tbw;
+            var wspolczynnikA = Zmienne.wspolczynnikA;
+            var czasPicia = Zmienne.czasPicia;
+            var czas1 = Zmienne.czas1;
+            var wynik = Zmienne.wynik;
+            var wynik2 = Zmienne.wynik2;
 
+            //tu liczy standardowo promile
+            wynik = (wspolczynnikA / tbw) * 0.8 - (czasPicia * 0.2);
+
+            //czlowiek trzeŸwieje 0,2 na godzine, wiêc liczymy ile godzin zejdzie siê aby zbiæ promile do 0.
+            //otrzymujemy liczbe godzin i minut po przecinku
+            wynik2 = wynik / 0.2;
+
+            //dodajemuy do tego wartoœæ obecnego czasu 
+            wynik2 = wynik2 + Zmienne.czas1;
+            Zmienne.wynik2 = wynik2;
         }
     }
 }

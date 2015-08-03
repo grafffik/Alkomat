@@ -26,7 +26,9 @@ namespace Alkomat
         public static int iloscWodkaMala { get; set; }
         public static int iloscWodkaDuza { get; set; }
         public static double wspolczynnikA { get; set; }
+        public static double czas1 { get; set; }
         public static double czasPicia { get; set; }
         public static double wynik { get; set; }
+        public static double wynik2 { get; set; }
     }
 }

@@ -31,15 +31,16 @@ namespace Alkomat
             SetContentView(Resource.Layout.podajGodzine);
 
             Zmienne.czasPicia = 0;
+            Zmienne.czas1 = 0;
 
             // Create your application here
 
             //godzina pobierana z telefonu
             g1 = DateTime.Now.Hour;
             m1 = DateTime.Now.Minute;
-            
+
             //suma godzin i minut pobranych z telefonu            
-            czas1 = g1 + (m1 / 60);
+            Zmienne.czas1 = g1 + (m1 / 60);
 
             //jak wywo³uje siê zegar w nowej metodzie to dziala liczenie, ale zegar jest am/pm
             zegar = FindViewById<TimePicker>(Resource.Id.timePicker1);
@@ -55,14 +56,14 @@ namespace Alkomat
 
             //jezeli godzina testu(w double) jest mniejsza ni¿ godzina koñca melan¿u, dodaje 12h by liczba by³a wg. doby i pory dnia
 
-            if (czas2 > czas1)
+            if (czas2 > Zmienne.czas1)
             {
-                czas1 = czas1 + 12;
-                Zmienne.czasPicia = czas1 - czas2;
+                Zmienne.czas1 = Zmienne.czas1 + 12;
+                Zmienne.czasPicia = Zmienne.czas1 - czas2;
             }
-            else if (czas1 >= czas2)
+            else if (Zmienne.czas1 >= czas2)
             {
-                Zmienne.czasPicia = czas1 - czas2;
+                Zmienne.czasPicia = Zmienne.czas1 - czas2;
             }
         }        
         

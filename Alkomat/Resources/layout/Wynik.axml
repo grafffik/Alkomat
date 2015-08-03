@@ -37,7 +37,6 @@
         android:paddingLeft="10px"
         android:paddingRight="10px" />
     <TextView
-        android:text="o godz. 09:15"
         android:textColor="#FFE92E"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
@@ -59,7 +58,6 @@
         android:paddingRight="10px"
         android:textStyle="bold" />
     <TextView
-        android:text="o godz. 11:30"
         android:textColor="#4EFF00"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
@@ -67,7 +65,7 @@
         android:gravity="center"
         android:paddingLeft="10px"
         android:paddingRight="10px"
-        android:id="@+id/TextView_DopuszczalneStezenieGodzina" />
+        android:id="@+id/TextView_WytrzezwiejeszGodzina" />
     <Button
         android:textColor="#FFFFFF"
         android:text="Oblicz ponownie"

@@ -146,6 +146,9 @@ namespace Alkomat
 			// aapt resource value: 0x7f070036
 			public const int TextView_DopuszczalneStezenieGodzina = 2131165238;
 			
+			// aapt resource value: 0x7f070037
+			public const int TextView_WytrzezwiejeszGodzina = 2131165239;
+			
 			// aapt resource value: 0x7f07000a
 			public const int buttonDalej = 2131165194;
 			
@@ -200,8 +203,8 @@ namespace Alkomat
 			// aapt resource value: 0x7f070032
 			public const int buttonReklama = 2131165234;
 			
-			// aapt resource value: 0x7f070037
-			public const int buttonWynik = 2131165239;
+			// aapt resource value: 0x7f070038
+			public const int buttonWynik = 2131165240;
 			
 			// aapt resource value: 0x7f07000c
 			public const int duzepiwo = 2131165196;
