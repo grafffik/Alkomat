@@ -29,8 +29,9 @@ namespace Alkomat
 
             textView_AktulnePromile = FindViewById<TextView>(Resource.Id.textView_AktulnePromile);
             textView_AktulnePromile.Text = Math.Round(Zmienne.wynik, 2).ToString();
+            textView_AktulnePromile.Text = textView_AktulnePromile.Text + '‰';
 
-            buttonWynik.Click += buttonWynik_Click;
+           buttonWynik.Click += buttonWynik_Click;
         }
 
         private void buttonWynik_Click(object sender, EventArgs e)
