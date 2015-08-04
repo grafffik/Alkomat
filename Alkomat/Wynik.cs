@@ -73,10 +73,13 @@ namespace Alkomat
 
             string godzinka = Math.Round(pob, 2).ToString();
             List<string> temp = new List<string>();
+
+            // , - jesli wersja 4.3 i 5.0
+            // . - jesli wersja 4.4
             temp.AddRange(godzinka.Split(','));
            // string minuty = godzinka.Substring(godzinka.Length - 2, godzinka.Length);
-            int hour = Convert.ToInt16(temp[0]); //((int)Math.Floor(pob));
-            int minutes = Convert.ToInt16(temp[1]);
+            int hour = Convert.ToInt32(temp[0]); //((int)Math.Floor(pob));
+            int minutes = Convert.ToInt32(temp[1]);
             if (minutes > 60)
                 hour++;
             minutes = minutes % 60;
