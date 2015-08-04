@@ -39,31 +39,30 @@ namespace Alkomat
             textView_AktulnePromile.Text = Math.Round(Zmienne.wynik, 2).ToString();
             textView_AktulnePromile.Text = textView_AktulnePromile.Text + '‰';
             
-            double pob = Zmienne.wynik2;
+            double pob = Zmienne.wynik2;            
             
-            //if (pob>24)
-            //{
-            //    double a = pob - 24;
-            //    pob = a;
-            //}
-            //Math.Round(pob, 2).ToString();
             TextView_WytrzezwiejeszGodzina = FindViewById<TextView>(Resource.Id.TextView_WytrzezwiejeszGodzina);
             TextView_WytrzezwiejeszGodzina.Text = ToTime(pob);
             TextView_WytrzezwiejeszGodzina.Text = TextView_WytrzezwiejeszGodzina.Text.Replace(',', ':');
+            if (Zmienne.wynik<=0)
+            {
+                TextView_WytrzezwiejeszGodzina.Text = "nie dotyczy";
+            }
+            else
             TextView_WytrzezwiejeszGodzina.Text = "o godz: " + TextView_WytrzezwiejeszGodzina.Text;
 
             TextView_DopuszczalneStezenieGodzina = FindViewById<TextView>(Resource.Id.TextView_DopuszczalneStezenieGodzina);
 
             double pob2 = pob - 1.25;
-            //if (pob2>24)
-            //{
-            //    double b = pob2 - 24;
-            //    pob2 = b;
-            //}
 
             TextView_DopuszczalneStezenieGodzina.Text = ToTime(pob2);
             TextView_DopuszczalneStezenieGodzina.Text = TextView_DopuszczalneStezenieGodzina.Text.Replace(',', ':');
-            TextView_DopuszczalneStezenieGodzina.Text = "o godz: " + TextView_DopuszczalneStezenieGodzina.Text;
+            if (Zmienne.wynik <= 0)
+            {
+                TextView_DopuszczalneStezenieGodzina.Text = "nie dotyczy";
+            }
+            else
+                TextView_DopuszczalneStezenieGodzina.Text = "o godz: " + TextView_DopuszczalneStezenieGodzina.Text;
 
             buttonWynik.Click += buttonWynik_Click;
         }
@@ -74,16 +73,14 @@ namespace Alkomat
             string godzinka = Math.Round(pob, 2).ToString();
             List<string> temp = new List<string>();
 
-            // , - jesli wersja 4.3 i 5.0
-            // . - jesli wersja 4.4
             temp.AddRange(godzinka.Split(','));
             if (temp.Count == 1)
             {
                 temp.Clear();
                 temp.AddRange(godzinka.Split('.'));
             }
-           // string minuty = godzinka.Substring(godzinka.Length - 2, godzinka.Length);
-            int hour = Convert.ToInt32(temp[0]); //((int)Math.Floor(pob));
+
+            int hour = Convert.ToInt32(temp[0]); 
             int minutes = Convert.ToInt32(temp[1]);
             if (minutes > 60)
                 hour++;

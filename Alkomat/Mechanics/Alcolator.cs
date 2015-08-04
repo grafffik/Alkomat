@@ -24,6 +24,10 @@ namespace Alkomat.Mechanics
             var wynik = Zmienne.wynik;
 
             wynik = (wspolczynnikA / tbw) * 0.8 - (czasPicia * 0.2);
+            if (wynik<=0)
+            {
+                wynik = 0;
+            }
             Zmienne.wynik = wynik;
         }
         public static void KiedyTrzezwy()
