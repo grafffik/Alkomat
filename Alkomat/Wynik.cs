@@ -54,7 +54,7 @@ namespace Alkomat
 
             TextView_DopuszczalneStezenieGodzina = FindViewById<TextView>(Resource.Id.TextView_DopuszczalneStezenieGodzina);
 
-            double pob2 = pob - 1;
+            double pob2 = pob - 1.25;
             //if (pob2>24)
             //{
             //    double b = pob2 - 24;
